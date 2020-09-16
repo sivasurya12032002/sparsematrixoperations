@@ -4,7 +4,7 @@ main(){
 
 //variables required
 int i,j,rows,columns,rows2,columns2,a[100][100],b[100][100], num = 1, num2 = 1, k= 1, x= 1, y = 1,
-great,sum[3][100],sparse[3][100] ,sparse2[3][100] , temp,sorted[3][100];
+sum[3][100],sparse[3][100] ,sparse2[3][100] , temp;
 
 //=========================================Input Matrix 1 =========================================================
 
@@ -141,14 +141,7 @@ while(k <= (num - 1) && x <= (num2-1)){
         }
     }
 
-    //finding the greater dimension among the sparse matrices
-    if ((num2-1) > (num-1)){
-        great = num2-1;
-    }
 
-    else{
-        great = num-1;
-    }
 
   //printing the remaining elements
 if (x>num2-1){
